@@ -29,3 +29,19 @@
 <div id = "1" align = "center">
   <h1 id="anaconda" align = "center">Anaconda</h1>
 </div>
+
+
+<ol>
+  <li><a href="#titulo1">Elemento 1</a></li>
+  <li><a href="#titulo2">Elemento 2</a></li>
+  <li><a href="#titulo3">Elemento 3</a></li>
+</ol>
+
+<h2 id="titulo1">Título 1</h2>
+<p>Contenido del título 1.</p>
+
+<h2 id="titulo2">Título 2</h2>
+<p>Contenido del título 2.</p>
+
+<h2 id="titulo3">Título 3</h2>
+<p>Contenido del título 3.</p>
