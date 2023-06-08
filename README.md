@@ -239,7 +239,98 @@ cv2.destroyAllWindows()
 <p>¡Ahora puedes detectar y dibujar marcas de las manos en tiempo real utilizando OpenCV y Mediapipe en tu cámara web!. Cabe resaltar que el codigo explicado se encuentra en mediapipe.py</p>
   </div>
   
+<div id = "7" align = "center">
+  <h1 id = "Final">Algoritmo Final</h1>
+<ol align="justify">
+  <li>Importar las librerías necesarias:</li>
+</ol>
+<pre align="center"><code class="language-python">
+import cv2
+import mediapipe as mp
+from dobotdll import DobotDllType
+</code></pre>
 
+<ol align="justify" start="2">
+  <li>Inicializar el objeto de detección de manos:</li>
+</ol>
+<pre align="center"><code class="language-python">
+mp_drawing = mp.solutions.drawing_utils
+mp_hands = mp.solutions.hands
+
+hands = mp_hands.Hands(static_image_mode=False, max_num_hands=2, min_detection_confidence=0.5)
+</code></pre>
+
+<ol align="justify" start="3">
+  <li>Inicializar la API DobotDllType:</li>
+</ol>
+<pre align="center"><code class="language-python">
+api = DobotDllType()
+</code></pre>
+
+<ol align="justify" start="4">
+  <li>Conectar al Dobot Magician:</li>
+</ol>
+<pre align="center"><code class="language-python">
+portName = "COMX"  # Reemplaza "COMX" con el puerto correcto del Dobot
+baudrate = 115200
+api.ConnectDobot(portName, baudrate)
+</code></pre>
+
+<ol align="justify" start="5">
+  <li>Inicializar la cámara web:</li>
+</ol>
+<pre align="center"><code class="language-python">
+cap = cv2.VideoCapture(0)
+</code></pre>
+
+<ol align="justify" start="6">
+  <li>Realizar la detección y seguimiento de manos en tiempo real:</li>
+</ol>
+<pre align="center"><code class="language-python">
+while cap.isOpened():
+    success, image = cap.read()
+    if not success:
+        print("Error al leer el cuadro de video")
+        break
+
+    image_rgb = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
+
+    results = hands.process(image_rgb)
+
+    if results.multi_hand_landmarks:
+        hand_landmarks = results.multi_hand_landmarks[0]
+        x = hand_landmarks.landmark[mp_hands.HandLandmark.INDEX_FINGER_TIP].x
+        y = hand_landmarks.landmark[mp_hands.HandLandmark.INDEX_FINGER_TIP].y
+
+        x_dobot = x * 300
+        y_dobot = (1 - y) * 300
+
+        api.SetPTPCmd(api, 1, x_dobot, y_dobot, 0, 1)
+
+    cv2.imshow('Hand Detection', image)
+
+    if cv2.waitKey(1) & 0xFF == ord('q'):
+        break
+</code></pre>
+
+<ol align="justify" start="7">
+  <li>Desconectar el Dobot:</li>
+</ol>
+<pre align="center"><code class="language-python">
+api.DisconnectDobot(api)
+</code></pre>
+
+<ol align="justify" start="8">
+  <li>Liberar los recursos y cerrar las ventanas:</li>
+</ol>
+<pre align="center"><code class="language-python">
+cap.release()
+cv2.destroyAllWindows()
+</code></pre>
+
+<p>¡Ahora tienes un código que utiliza la biblioteca OpenCV y Mediapipe para detectar y seguir las manos en tiempo real, y controlar el robot Dobot Magician según la posición de la mano! Recuerda personalizar la configuración, como el puerto COM y los factores de escala, según tus necesidades. El codigo es MovDobot-MediaPipe-OpenCV.py</p>
+
+</div>
 
 
 
