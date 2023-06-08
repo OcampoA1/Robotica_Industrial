@@ -48,7 +48,27 @@
   <p align = "justify">En el desarrollo del software que permite la manipulación del robot Dobot Magician a través de gestos de las manos, se utilizan varias bibliotecas y APIs clave. Estas herramientas incluyen Mediapipe, OpenCV y la API DobotDllType. Su integración es fundamental para lograr un control preciso y efectivo del robot.</p>
   <p align = "justify">Mediapipe, OpenCV y la API DobotDllType se combinan para crear un software poderoso y versátil. Estas librerías se utilizan específicamente en el contexto del desarrollo del software diseñado para reconocer y rastrear los gestos de las manos. Mediante el análisis y seguimiento de los nodos clave de la mano, como los dedos y la palma, se puede capturar la información necesaria para controlar el robot Dobot Magician.</p>
   <p align = "justify">Mediapipe desempeña un papel central al proporcionar modelos de aprendizaje automático preentrenados y una estructura para el procesamiento de datos en tiempo real. Esto permite detectar y rastrear los nodos de la mano, proporcionando información crucial para el control del robot.</p>
-  
+  <p align = "justify">OpenCV, por su parte, es una biblioteca ampliamente utilizada en visión por computadora. Se utiliza para la captura y procesamiento de imágenes y videos en tiempo real, lo que resulta esencial para la adquisición de imágenes de la cámara y el procesamiento de los datos obtenidos a través de Mediapipe.</p>
+  <p align = "justify">La API DobotDllType proporciona la interfaz de programación necesaria para interactuar con el robot Dobot Magician. A través de esta API, se pueden enviar comandos programáticos para controlar el movimiento, la sujeción, la velocidad y otras funciones del robot. Al integrar la API DobotDllType con Mediapipe y OpenCV, se traducen los gestos y movimientos detectados en comandos precisos para el robot Dobot Magician.</p>
+</div>
+
+<div id = "3" align = "center">
+  <h1 id = "API" align = "center">API</h1>
+  <ol align = "justify">
+  <li><strong>Descargar la API DobotDllType:</strong> Dirígete al sitio oficial de Dobot o al repositorio de GitHub de Dobot y descarga el paquete de la API DobotDllType. Asegúrate de seleccionar la versión adecuada de la API según tu sistema operativo y arquitectura (32 o 64 bits).</li>
+  <li><strong>Descomprimir el archivo:</strong> Descomprime el archivo ZIP de la API DobotDllType en una ubicación conveniente de tu sistema.</li>
+  <li><strong>Configurar el entorno de desarrollo:</strong> Abre Spyder y configura el entorno de desarrollo visualmente a tu elección.</li>
+  <li><strong>Crear un proyecto de Python:</strong> Crea un nuevo proyecto de Python en tu entorno de desarrollo</li>
+  <li><strong>Copiar los archivos de la API:</strong> Dentro del directorio descomprimido de la API DobotDllType, encontrarás varios archivos. Copia el archivo <code>DobotDllType.py</code> en la ubicación de tu proyecto de Python.</li>
+  <li><strong>Instalar las dependencias:</strong> Verifica si la API DobotDllType tiene dependencias adicionales que debes instalar. Consulta la documentación de la API y sigue las instrucciones proporcionadas para instalar las dependencias necesarias.</li>
+  <li><strong>Importar y utilizar la API:</strong> Ahora estás listo para importar y utilizar la API DobotDllType en tu proyecto de Python. Agrega la siguiente línea de código al principio de tu archivo Python para importar la API:</li>
+</ol>
+<pre><code class="language-python">
+from dobotdll import DobotDllType
+</code></pre>
+<p align = "justify">A partir de este punto, puedes utilizar los métodos y funciones proporcionados por la API DobotDllType para controlar el robot Dobot Magician. Consulta la documentación de la API y los ejemplos de código disponibles para aprender cómo utilizar los comandos específicos de la API.</p>
+<p align = "justify">Recuerda seguir las instrucciones proporcionadas en la documentación de la API y en el repositorio de Dobot para asegurarte de realizar una instalación correcta y completa de la API DobotDllType.</p>
+
 </div>
 
 
