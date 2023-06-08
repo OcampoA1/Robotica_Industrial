@@ -111,5 +111,31 @@ print(mp.__version__)
 <p align = "justify">Guarda el archivo con un nombre descriptivo, por ejemplo, "test_mediapipe.py". Luego, ejecuta el archivo y verifica que se imprima la versión de Mediapipe en la salida de la terminal.</p>
 
 </div>
+<div id = "5" align = "center">
+  <h1 id = "cv2">OpenCV</h1>
+  <ol align = "justify">
+  <li><strong>Activar el entorno virtual:</strong> Abre Anaconda Navigator o una terminal y activa el entorno virtual "mediapipe-env" que creaste previamente. Puedes utilizar el siguiente comando en la terminal para activarlo:</li>
+</ol>
+<pre align = "center"><code class="language-bash">
+conda activate mediapipe-env
+</code></pre>
+<ol start="2">
+  <li><strong>Instalar OpenCV:</strong> Con el entorno virtual activado, puedes instalar OpenCV utilizando el administrador de paquetes de Anaconda. Ejecuta el siguiente comando en la terminal:</li>
+</ol>
+<pre align = "center"><code class="language-bash">
+conda install -c conda-forge opencv
+</code></pre>
+<ol start="3">
+  <li><strong>Verificar la instalación:</strong> Para asegurarte de que OpenCV se ha instalado correctamente, puedes ejecutar un código de prueba en Python. Abre tu editor de código preferido y crea un nuevo archivo Python. Copia y pega el siguiente código en el archivo:</li>
+</ol>
+<pre align = "center"><code class="language-python">
+import cv2
+print(cv2.__version__)
+</code></pre>
+<p align = "justify">Guarda el archivo con un nombre descriptivo, por ejemplo, "test_opencv.py". Luego, ejecuta el archivo y verifica que se imprima la versión de OpenCV en la salida de la terminal.</p>
+<p align = "justify">Recuerda que al haber creado el entorno virtual "mediapipe-env" previamente, debes asegurarte de activarlo antes de instalar OpenCV. De esta manera, OpenCV se instalará en ese entorno específico y podrás utilizarlo junto con Mediapipe.</p>
+}
+</div>
+
 
 
