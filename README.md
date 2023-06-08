@@ -30,6 +30,8 @@
 
 <div id = "1" align = "center">
   <h1 id="anaconda" align = "center">Anaconda</h1>
+  <img src="https://en.wikipedia.org/wiki/Anaconda_%28Python_distribution%29#/media/File:Anaconda_Logo.png" alt="Anaconda">
+  <p align = "justify"></p>
 </div>
 
 
