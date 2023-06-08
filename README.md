@@ -54,20 +54,34 @@
 
 <div id = "3" align = "center">
   <h1 id = "API" align = "center">API</h1>
-  <ol align = "justify">
-  <li><strong>Descargar la API DobotDllType:</strong> Dirígete al sitio oficial de Dobot o al repositorio de GitHub de Dobot y descarga el paquete de la API DobotDllType. Asegúrate de seleccionar la versión adecuada de la API según tu sistema operativo y arquitectura (32 o 64 bits).</li>
+
+
+<ol align = "justify">
+  <li><strong>Descargar la API DobotDllType:</strong> Dirígete al <a href="https://www.dobot.cc/">sitio web oficial de Dobot</a> o al repositorio de <a href="https://github.com/DobotRobotics/DobotMagician">GitHub de Dobot</a> y descarga el paquete de la API DobotDllType. Asegúrate de seleccionar la versión adecuada de la API según tu sistema operativo y arquitectura (32 o 64 bits).</li>
+  
   <li><strong>Descomprimir el archivo:</strong> Descomprime el archivo ZIP de la API DobotDllType en una ubicación conveniente de tu sistema.</li>
-  <li><strong>Configurar el entorno de desarrollo:</strong> Abre Spyder y configura el entorno de desarrollo visualmente a tu elección.</li>
-  <li><strong>Crear un proyecto de Python:</strong> Crea un nuevo proyecto de Python en tu entorno de desarrollo</li>
+  
+  <li><strong>Configurar el entorno de desarrollo:</strong> Abre tu entorno de desarrollo preferido para escribir tu código. Asegúrate de tener Python instalado en tu sistema antes de continuar.</li>
+  
+  <li><strong>Crear un proyecto de Python:</strong> Crea un nuevo proyecto de Python en tu entorno de desarrollo. Puedes utilizar un IDE como PyCharm, Visual Studio Code u otro de tu elección.</li>
+  
   <li><strong>Copiar los archivos de la API:</strong> Dentro del directorio descomprimido de la API DobotDllType, encontrarás varios archivos. Copia el archivo <code>DobotDllType.py</code> en la ubicación de tu proyecto de Python.</li>
+  
   <li><strong>Instalar las dependencias:</strong> Verifica si la API DobotDllType tiene dependencias adicionales que debes instalar. Consulta la documentación de la API y sigue las instrucciones proporcionadas para instalar las dependencias necesarias.</li>
+  
   <li><strong>Importar y utilizar la API:</strong> Ahora estás listo para importar y utilizar la API DobotDllType en tu proyecto de Python. Agrega la siguiente línea de código al principio de tu archivo Python para importar la API:</li>
 </ol>
+
 <pre><code class="language-python">
 from dobotdll import DobotDllType
 </code></pre>
+
 <p align = "justify">A partir de este punto, puedes utilizar los métodos y funciones proporcionados por la API DobotDllType para controlar el robot Dobot Magician. Consulta la documentación de la API y los ejemplos de código disponibles para aprender cómo utilizar los comandos específicos de la API.</p>
+
 <p align = "justify">Recuerda seguir las instrucciones proporcionadas en la documentación de la API y en el repositorio de Dobot para asegurarte de realizar una instalación correcta y completa de la API DobotDllType.</p>
+
+
+
 
 </div>
 
