@@ -167,6 +167,10 @@ if cv2.waitKey(1) &amp; 0xFF == ord('q'):
     break
 </code></pre>
 <p align = "justify">¡Ahora puedes capturar y mostrar video en tiempo real utilizando OpenCV en tu computadora!. Este codigo se encuentra en la parte superior como 'cv2.py'.</p>
+<div id = "7" aling = "center">
+  <h1 id = "manos" align = "center">Algoritmo MediaPipe</h1> 
+  </div>
+  
 
 
 
