@@ -134,8 +134,41 @@ print(cv2.__version__)
 </code></pre>
 <p align = "justify">Guarda el archivo con un nombre descriptivo, por ejemplo, "test_opencv.py". Luego, ejecuta el archivo y verifica que se imprima la versión de OpenCV en la salida de la terminal.</p>
 <p align = "justify">Recuerda que al haber creado el entorno virtual "mediapipe-env" previamente, debes asegurarte de activarlo antes de instalar OpenCV. De esta manera, OpenCV se instalará en ese entorno específico y podrás utilizarlo junto con Mediapipe.</p>
-}
 </div>
+
+<div id = "6" align = "center">
+  <h1 id = "camara">Algortimo OpenCV</h1>
+  <p align = "justify">En este tutorial aprenderás cómo utilizar OpenCV para capturar video en tiempo real desde la cámara de tu computadora y mostrarlo en una ventana.</p>
+<ol align = "justify">
+  <li>Importa la biblioteca OpenCV:</li>
+</ol>
+<pre align = "center"><code class="language-python">
+import cv2
+</code></pre>
+<ol start="2" align = "justify">
+  <li>Crea el objeto <code>VideoCapture</code>:</li>
+</ol>
+<pre align = "center"><code class="language-python">
+cap = cv2.VideoCapture(0)
+</code></pre>
+<ol start="3" align = "justify">
+  <li>Captura y muestra los frames:</li>
+</ol>
+<pre align = "center"><code class="language-python">
+while True:
+    ret, frame = cap.read()
+    cv2.imshow("Video en tiempo real", frame)
+</code></pre>
+<ol start="4" align = "justify">
+  <li>Finaliza la captura y cierra la ventana:</li>
+</ol>
+<pre align = "center"><code class="language-python">
+if cv2.waitKey(1) &amp; 0xFF == ord('q'):
+    break
+</code></pre>
+<p align = "justify">¡Ahora puedes capturar y mostrar video en tiempo real utilizando OpenCV en tu computadora!. Este codigo se encuentra en la parte superior como 'cv2.py'</p>
+  
+<\div>
 
 
 
