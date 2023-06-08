@@ -30,8 +30,18 @@
 
 <div id = "1" align = "center">
   <h1 id="anaconda" align = "center">Anaconda</h1>
-  <img src="https://en.wikipedia.org/wiki/Anaconda_%28Python_distribution%29#/media/File:Anaconda_Logo.png" alt="Anaconda">
-  <p align = "justify"></p>
+<ol align = "justify">
+  <li><strong>Descargar Anaconda:</strong> Visita el <a href="https://www.anaconda.com/products/individual">sitio web oficial de Anaconda</a> y descarga la versión adecuada para tu sistema operativo (Windows, macOS o Linux).</li>
+  
+  <li><strong>Instalar Anaconda:</strong> Ejecuta el archivo de instalación que descargaste y sigue las instrucciones proporcionadas por el instalador. Asegúrate de marcar la opción "Agregar Anaconda al PATH" durante la instalación para poder acceder a los comandos de Anaconda desde la línea de comandos.</li>
+  
+  <li><strong>Abrir Spyder:</strong> Una vez instalado Anaconda, puedes abrir el IDE Spyder. En Windows, ve al menú Inicio y busca "Spyder" en la lista de aplicaciones instaladas. En macOS y Linux, puedes abrir una terminal y ejecutar el comando <code>spyder</code>.</li>
+</ol>
+
+<p align = "justify">Con estos pasos, tendrás instalado Anaconda y podrás utilizar Spyder como tu entorno de desarrollo para programar en Python y realizar tareas de análisis de datos.</p>
+
+<p align = "justify">Recuerda que esta es una guía básica y puede haber variaciones dependiendo de tu sistema operativo y la versión de Anaconda que estés utilizando. Si deseas obtener más información detallada o encuentras algún problema durante la instalación, te recomiendo consultar la documentación oficial de Anaconda y Spyder.</p>
+
 </div>
 
 
