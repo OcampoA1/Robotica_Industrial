@@ -63,7 +63,7 @@
   
   <li><strong>Configurar el entorno de desarrollo:</strong> Abre tu entorno de desarrollo preferido para escribir tu código. Asegúrate de tener Python instalado en tu sistema antes de continuar.</li>
   
-  <li><strong>Crear un proyecto de Python:</strong> Crea un nuevo proyecto de Python en tu entorno de desarrollo. Puedes utilizar un IDE como PyCharm, Visual Studio Code u otro de tu elección.</li>
+  <li><strong>Crear un proyecto de Python:</strong> Crea un nuevo proyecto de Python en tu entorno de desarrollo Spyder</li>
   
   <li><strong>Copiar los archivos de la API:</strong> Dentro del directorio descomprimido de la API DobotDllType, encontrarás varios archivos. Copia el archivo <code>DobotDllType.py</code> en la ubicación de tu proyecto de Python.</li>
   
@@ -72,16 +72,43 @@
   <li><strong>Importar y utilizar la API:</strong> Ahora estás listo para importar y utilizar la API DobotDllType en tu proyecto de Python. Agrega la siguiente línea de código al principio de tu archivo Python para importar la API:</li>
 </ol>
 
-<pre><code class="language-python">
+<pre aling = "center"><code class="language-python">
 from dobotdll import DobotDllType
 </code></pre>
 
 <p align = "justify">A partir de este punto, puedes utilizar los métodos y funciones proporcionados por la API DobotDllType para controlar el robot Dobot Magician. Consulta la documentación de la API y los ejemplos de código disponibles para aprender cómo utilizar los comandos específicos de la API.</p>
 
 <p align = "justify">Recuerda seguir las instrucciones proporcionadas en la documentación de la API y en el repositorio de Dobot para asegurarte de realizar una instalación correcta y completa de la API DobotDllType.</p>
+</div>
 
-
-
+<div id = "4" align = "center">
+  <h1 id = "mediapipe" align = "center">MediaPipe</h1>
+  <ol align = "justify">
+  <li><strong>Crear un entorno virtual:</strong> Abre Anaconda Navigator o una terminal y crea un nuevo entorno virtual. Puedes nombrar tu entorno como desees. Por ejemplo, utiliza el siguiente comando en la terminal para crear un entorno llamado "mediapipe-env":</li>
+</ol>
+<pre><code class="language-bash">
+conda create --name mediapipe-env
+</code></pre>
+<ol start="2" align = "justify">
+  <li><strong>Activar el entorno virtual:</strong> Una vez creado el entorno virtual, actívalo ejecutando el siguiente comando en la terminal:</li>
+</ol>
+<pre><code class="language-bash">
+conda activate mediapipe-env
+</code></pre>
+<ol start="3" align = "justify">
+  <li><strong>Instalar Mediapipe:</strong> Con el entorno virtual activado, puedes instalar Mediapipe utilizando el administrador de paquetes de Anaconda. Ejecuta el siguiente comando en la terminal:</li>
+</ol>
+<pre><code class="language-bash">
+conda install -c conda-forge mediapipe
+</code></pre>
+<ol start="4" align = "justify">
+  <li><strong>Verificar la instalación:</strong> Para asegurarte de que Mediapipe se ha instalado correctamente, puedes ejecutar un código de prueba en Python. Abre tu editor de código preferido y crea un nuevo archivo Python. Copia y pega el siguiente código en el archivo:</li>
+</ol>
+<pre align = "justify"><code class="language-python">
+import mediapipe as mp
+print(mp.__version__)
+</code></pre>
+<p align = "justify">Guarda el archivo con un nombre descriptivo, por ejemplo, "test_mediapipe.py". Luego, ejecuta el archivo y verifica que se imprima la versión de Mediapipe en la salida de la terminal.</p>
 
 </div>
 
