@@ -86,25 +86,25 @@ from dobotdll import DobotDllType
   <ol align = "justify">
   <li><strong>Crear un entorno virtual:</strong> Abre Anaconda Navigator o una terminal y crea un nuevo entorno virtual. Puedes nombrar tu entorno como desees. Por ejemplo, utiliza el siguiente comando en la terminal para crear un entorno llamado "mediapipe-env":</li>
 </ol>
-<pre><code class="language-bash">
+<pre align = "center"><code class="language-bash">
 conda create --name mediapipe-env
 </code></pre>
 <ol start="2" align = "justify">
   <li><strong>Activar el entorno virtual:</strong> Una vez creado el entorno virtual, actívalo ejecutando el siguiente comando en la terminal:</li>
 </ol>
-<pre><code class="language-bash">
+<pre align = "center"><code class="language-bash">
 conda activate mediapipe-env
 </code></pre>
 <ol start="3" align = "justify">
   <li><strong>Instalar Mediapipe:</strong> Con el entorno virtual activado, puedes instalar Mediapipe utilizando el administrador de paquetes de Anaconda. Ejecuta el siguiente comando en la terminal:</li>
 </ol>
-<pre><code class="language-bash">
+<pre align = "center"><code class="language-bash">
 conda install -c conda-forge mediapipe
 </code></pre>
 <ol start="4" align = "justify">
   <li><strong>Verificar la instalación:</strong> Para asegurarte de que Mediapipe se ha instalado correctamente, puedes ejecutar un código de prueba en Python. Abre tu editor de código preferido y crea un nuevo archivo Python. Copia y pega el siguiente código en el archivo:</li>
 </ol>
-<pre align = "justify"><code class="language-python">
+<pre align = "center"><code class="language-python">
 import mediapipe as mp
 print(mp.__version__)
 </code></pre>
