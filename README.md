@@ -168,7 +168,75 @@ if cv2.waitKey(1) &amp; 0xFF == ord('q'):
 </code></pre>
 <p align = "justify">¡Ahora puedes capturar y mostrar video en tiempo real utilizando OpenCV en tu computadora!. Este codigo se encuentra en la parte superior como 'cv2.py'.</p>
 <div id = "7" aling = "center">
-  <h1 id = "manos" align = "center">Algoritmo MediaPipe</h1> 
+  <h1 id = "manos" align = "center">Algoritmo MediaPipe</h1>
+  <p align = "justify">En este tutorial, aprenderemos cómo utilizar OpenCV y Mediapipe para detectar y dibujar marcas de las manos en tiempo real utilizando la cámara web de tu computadora.</p>
+<ol align = "justify">
+  <li><strong>Importar las bibliotecas necesarias:</strong> Importamos las bibliotecas `cv2` y `mediapipe` para acceder a las funciones y clases necesarias.</li>
+</ol>
+<pre align = "center"><code class="language-python">
+import cv2
+import mediapipe as mp
+</code></pre>
+<ol start="2" align = "justify">
+  <li><strong>Inicializar el objeto de detección de manos:</strong> Creamos un objeto `Hands` para detectar las manos en la imagen. Configuramos el modo de imagen estática como falso, permitiendo la detección en tiempo real.</li>
+</ol>
+<pre align = "center"><code class="language-python">
+mp_drawing = mp.solutions.drawing_utils
+mp_hands = mp.solutions.hands
+
+hands = mp_hands.Hands(static_image_mode=False, max_num_hands=2, min_detection_confidence=0.5)
+</code></pre>
+<ol start="3" align = "justify">
+  <li><strong>Inicializar la cámara web:</strong> Creamos un objeto `VideoCapture` para acceder a la cámara web de la computadora.</li>
+</ol>
+<pre align = "center"><code class="language-python">
+cap = cv2.VideoCapture(0)
+</code></pre>
+<ol start="4" align = "justify">
+  <li><strong>Procesar los frames de la cámara:</strong> Utilizamos un bucle `while` para capturar continuamente los frames de la cámara y procesarlos.</li>
+</ol>
+<pre align = "center"><code class="language-python">
+while cap.isOpened():
+    success, image = cap.read()
+</code></pre>
+<ol start="5" align = "justify">
+  <li><strong>Convertir la imagen a RGB:</strong> Convertimos la imagen capturada de BGR a RGB para ser compatible con la detección de manos de Mediapipe.</li>
+</ol>
+<pre align = "center"><code class="language-python">
+image_rgb = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
+</code></pre>
+<ol start="6" align = "justify">
+  <li><strong>Detectar manos en la imagen:</strong> Utilizamos el objeto `Hands` para procesar la imagen y detectar las manos en ella.</li>
+</ol>
+<pre align = "center"><code class="language-python">
+results = hands.process(image_rgb)
+</code></pre>
+<ol start="7" align = "justify">
+  <li><strong>Dibujar marcas de la mano en la imagen:</strong> Si se detectan manos en la imagen, utilizamos la función `draw_landmarks` de `drawing_utils` para dibujar las marcas de la mano en la imagen.</li>
+</ol>
+<pre align = "center"><code class="language-python">
+if results.multi_hand_landmarks:
+    for hand_landmarks in results.multi_hand_landmarks:
+        mp_drawing.draw_landmarks(
+            image, hand_landmarks, mp_hands.HAND_CONNECTIONS)
+</code></pre>
+<ol start="8" align = "justify">
+  <li><strong>Mostrar la imagen con las marcas de la mano:</strong> Mostramos la imagen con las marcas de la mano en una ventana utilizando la función `imshow` de OpenCV.</li>
+</ol>
+<pre align = "center"><code class="language-python">
+cv2.imshow('Hand Detection', image)
+</code></pre>
+<ol start="9" align = "justify">
+  <li><strong>Finalizar la captura y cerrar la ventana:</strong> Si se presiona la tecla 'q', salimos del bucle y liberamos los recursos.</li>
+</ol>
+<pre align = "center"><code class="language-python">
+if cv2.waitKey(1) &amp; 0xFF == ord('q'):
+    break
+
+cap.release()
+cv2.destroyAllWindows()
+</code></pre>
+<p>¡Ahora puedes detectar y dibujar marcas de las manos en tiempo real utilizando OpenCV y Mediapipe en tu cámara web!. Cabe resaltar que el codigo explicado se encuentra en mediapipe.py</p>
   </div>
   
 
