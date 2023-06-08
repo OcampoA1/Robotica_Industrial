@@ -26,6 +26,6 @@
   </ol>
 </div>
 
-<div id = "anaconda" align = "center">
-  <h1 align = "center">Anaconda</h1>
+<div id = "1" align = "center">
+  <h1 id="anaconda" align = "center">Anaconda</h1>
 </div>
