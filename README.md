@@ -25,7 +25,6 @@
     <li><a href="#recomendacion">Recomendaciones</a></li>
   </ol>
   
-  
 </div>
 
 <div id = "1" align = "center">
@@ -44,5 +43,12 @@
 
 </div>
 
+<div id = "2" align = "center">
+  <h1 id = "librerias" align = "center">Librerías</h1>
+  <p align = "justify">En el desarrollo del software que permite la manipulación del robot Dobot Magician a través de gestos de las manos, se utilizan varias bibliotecas y APIs clave. Estas herramientas incluyen Mediapipe, OpenCV y la API DobotDllType. Su integración es fundamental para lograr un control preciso y efectivo del robot.</p>
+  <p align = "justify">Mediapipe, OpenCV y la API DobotDllType se combinan para crear un software poderoso y versátil. Estas librerías se utilizan específicamente en el contexto del desarrollo del software diseñado para reconocer y rastrear los gestos de las manos. Mediante el análisis y seguimiento de los nodos clave de la mano, como los dedos y la palma, se puede capturar la información necesaria para controlar el robot Dobot Magician.</p>
+  <p align = "justify">Mediapipe desempeña un papel central al proporcionar modelos de aprendizaje automático preentrenados y una estructura para el procesamiento de datos en tiempo real. Esto permite detectar y rastrear los nodos de la mano, proporcionando información crucial para el control del robot.</p>
+  
+</div>
 
 
