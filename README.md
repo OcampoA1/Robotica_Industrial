@@ -166,9 +166,8 @@ while True:
 if cv2.waitKey(1) &amp; 0xFF == ord('q'):
     break
 </code></pre>
-<p align = "justify">¡Ahora puedes capturar y mostrar video en tiempo real utilizando OpenCV en tu computadora!. Este codigo se encuentra en la parte superior como 'cv2.py'</p>
-  
-<\div>
+<p align = "justify">¡Ahora puedes capturar y mostrar video en tiempo real utilizando OpenCV en tu computadora!. Este codigo se encuentra en la parte superior como 'cv2.py'.</p>
+
 
 
 
