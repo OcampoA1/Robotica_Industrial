@@ -22,7 +22,7 @@
     <li><a href="#manos">Algoritmo MediaPipe + OpenCV</a></li>
     <li><a href="#final">Algoritmo API + MediaPipe + OpenCV</a></li>
     <li><a href="#video">Video</a></li>
-    <li><a href="#recomendacion">Recomendaciones</a></li>
+    
   </ol>
   
 </div>
@@ -332,5 +332,9 @@ cv2.destroyAllWindows()
 
 </div>
 
+  <div id = "8" align = "center">
+    <h1 id = "video">Video</h1>
+    <a href="https://www.youtube.com/watch?v=hapEJkywNqU&feature=youtu.be">Video</a>
+  </div>
 
 
