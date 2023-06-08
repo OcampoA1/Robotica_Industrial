@@ -13,21 +13,24 @@
 <div id = "tutorial" align = "center">
   <h1 align = "center">TUTORIAL</h1>
   <ol align = "justify">
-    <li><a href="anaconda">Anaconda</a></li>
-    <li><a href="librerias">Librerías</a></li>
-    <li><a href="API">API Dobot Magician</a></li>
-    <li><a href="mediapipe">MediaPipe</a></li>
-    <li><a href="cv2">OpenCV</a></li>
-    <li><a href="camara">Algortimo OpenCV</a></li>
-    <li><a href="manos">Algoritmo MediaPipe + OpenCV</a></li>
-    <li><a href="final">Algoritmo API + MediaPipe + OpenCV</a></li>
-    <li><a href="video">Video</a></li>
-    <li><a href="recomendacion">Recomendaciones</a></li>
+    <li><a href="#anaconda">Anaconda</a></li>
+    <li><a href="#librerias">Librerías</a></li>
+    <li><a href="#API">API Dobot Magician</a></li>
+    <li><a href="#mediapipe">MediaPipe</a></li>
+    <li><a href="#cv2">OpenCV</a></li>
+    <li><a href="#camara">Algortimo OpenCV</a></li>
+    <li><a href="#manos">Algoritmo MediaPipe + OpenCV</a></li>
+    <li><a href="#final">Algoritmo API + MediaPipe + OpenCV</a></li>
+    <li><a href="#video">Video</a></li>
+    <li><a href="#recomendacion">Recomendaciones</a></li>
   </ol>
   
-  <h1 id="anaconda" align = "center">Anaconda</h1>
+  
 </div>
 
+<div id = "1" align = "center">
+  <h1 id="anaconda" align = "center">Anaconda</h1>
+</div>
 
 
 
